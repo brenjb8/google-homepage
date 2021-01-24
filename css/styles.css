@@ -17,9 +17,16 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, p{
 /*-------------Boilerplate CSS------------*/
 
 /*General*/
-
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+}
 
 /*Nav Bar*/
+header{
+    padding-top: 10px;
+}
+
 .header-left li{
     float: left;
     display: block;
@@ -42,32 +49,102 @@ h1, h2, h3, h4, h5, h6, ul, ol, li, p{
 }
 
 .search-section img{
-    width: 100%;
-    padding-bottom: 50px;;
+    position: relative;
+    width: 272px;
+    height: 92px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-bar{
+    position: relative;
 }
 
 .search-bar input{
     position: relative;
+    border-radius: 40px;
+    border-color: #dadce0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 10px;
-    width: 500px;
+    margin: 4px;
+    padding: 8px;
+    width: 600px;
+    height: 30px;
+    font-size: 16px;
+    color: rgba(0,0,0,.54);
+    letter-spacing: normal;
 }
 
 .search-btns{
     position: relative;
     text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.search-btns input{
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 7px 16px;
+    line-height: 27px; 
+    border: 1px solid #dadce0;
+    background-color: #dadce0;
+    letter-spacing: normal;
+    color: rgba(0,0,0,.54);
+
+
 }
 
 .search-section h5{
     text-align: center;
     padding: 10px;
     text-decoration: none;
+    color: #202124;
+}
+
+.search-section h5 a{
+    color: #1a0dab;
+    text-decoration: initial;
 }
 
 /*Footer*/
 
 footer{
+    background-color:#dadce0;
     position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #dadce0;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline;
+    padding: 10px;
+}
+
+.second-box{
+    background-color: orange;
+    display: inline;
+}
+
+.second-box-left{
+    float: right;
+    display: block;
+    padding: 8px;
+}
+
+
+.second-box-right{
+    float: left;
+    display: block;
+    padding: 8px;
 }
